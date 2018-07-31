@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+{% load staticfiles %}
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{% block title %}{% endblock  %}</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.typekit.net/ezf8yup.css">
+
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href="{% static 'css/normalize.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/icons.css' %}" rel="stylesheet" type="text/css" />
+
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+{% block content %}
+
+{% endblock  %}		
+		
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{% static 'js/TweenMax.min.js' %}"></script>
+
+<script src="{% static 'js/scrollmagic/uncompressed/ScrollMagic.js' %}"></script>
+<script src="{% static 'js/scrollmagic/uncompressed/plugins/animation.gsap.js' %}"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+<script src="{% static 'js/ThrowPropsPlugin.js' %}"></script>
+
+<script src="{% static 'js/CustomEase.js' %}"></script>
+<script src="{% static 'js/DrawSVGPlugin.js' %}"></script>
+
+<script src="{% static 'js/jquery.scrollstop.min.js' %}"></script>
+<script src="{% static 'js/portion.js' %}"></script>
+
+</body>
+</html>
